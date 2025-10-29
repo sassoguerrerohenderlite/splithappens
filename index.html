@@ -514,7 +514,41 @@
 
     <section>
 		<h3>Family Law News</h3>
-			
+		<script>
+		const feedURL = "https://familylawyerjax.com/feed/";
+  const rssURL = `https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(feedURL)}`;
+
+  fetch(rssURL)
+    .then(response => response.json())
+    .then(data => {
+      const feedDiv = document.getElementById("rss-feed");
+      if (!data || data.status !== "ok" || !data.items || data.items.length === 0) {
+        feedDiv.innerHTML = "No recent posts available.";
+        return;
+      }
+
+      let html = "<h4>Recent News from Sasso Guerrero & Henderlite</h4>";
+      data.items.slice(0, 5).forEach(item => {
+        const date = new Date(item.pubDate).toLocaleDateString('en-US', {
+          month: 'short', day: 'numeric', year: 'numeric'
+        });
+        const desc = item.description ? item.description.substring(0, 150).replace(/<[^>]*>/g, '') + "..." : "";
+        html += `
+          <div class="rss-item">
+            <a href="${item.link}" target="_blank">${item.title}</a>
+            <div class="rss-date">${date}</div>
+            <div class="rss-desc">${desc}</div>
+          </div>
+        `;
+      });
+      feedDiv.innerHTML = html;
+    })
+    .catch(err => {
+      console.error("RSS error:", err);
+      document.getElementById("rss-feed").innerHTML = 
+        "News feed unavailable. <a href='https://familylawyerjax.com/'>Visit site →</a>";
+    });
+	</script>		
 	</section>
 
 </div>
