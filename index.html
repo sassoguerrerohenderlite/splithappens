@@ -104,137 +104,103 @@
 .rss-desc { font-size: 0.95rem; color: #374151; line-height: 1.5; }
 </style>
 
-	<script type="application/ld+json">
+	<!-- 🎙️ Split Happens — Updated Schema using Megaphone feed -->
+<script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "Organization",
-      "@id": "https://familylawyerjax.com/#organization",
-      "name": "Sasso, Guerrero & Henderlite",
-      "url": "https://familylawyerjax.com/",
-      "alternateName": ["SGH Law", "Sasso Guerrero and Henderlite"],
-      "description": "Sasso, Guerrero & Henderlite is a Jacksonville-based law firm with Board Certified Marital & Family Law Experts, providing representation in family law and criminal defense matters across Northeast Florida.",
-      "logo": {
-        "@type": "ImageObject",
-        "url": "https://familylawyerjax.com/wp-content/uploads/2025/06/Sasso-Guerrero-Henderlite-Family-Law-Attorneys-in-Jacksonville-FL.png"
-      },
-      "sameAs": [
-        "https://www.facebook.com/SGHLaw",
-        "https://www.instagram.com/sghfamlaw/",
-        "https://www.tiktok.com/@sghlaw_",
-        "https://www.youtube.com/@sgh_law",
-        "https://www.google.com/search?q=sasso+guerrero+%26+henderlite+family+lawyers",
-        "https://floridacriminalattorney.com/",
-        "https://familylawyerfernandina.com/"
-      ],
-      "hasPart": [
-        { "@id": "https://familylawyerjax.com/#downtown" },
-        { "@id": "https://familylawyerjax.com/#southside" },
-        { "@id": "https://familylawyerjax.com/#fernandina" },
-        { "@id": "https://floridacriminalattorney.com/#site" },
-        { "@id": "https://familylawyerfernandina.com/#site" },
-        { "@id": "https://sassoguerrerohenderlite.github.io/splithappens/#podcast" }
-      ]
-    },
-
-    {
-      "@type": "LegalService",
-      "@id": "https://familylawyerjax.com/#downtown",
-      "name": "Sasso, Guerrero & Henderlite – Downtown Jacksonville / Urban Core",
-      "image": "https://familylawyerjax.com/wp-content/uploads/2025/06/Sasso-Guerrero-Henderlite-Family-Law-Attorneys-in-Jacksonville-FL.png",
-      "url": "https://familylawyerjax.com/",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "218 E. Ashley St",
-        "addressLocality": "Jacksonville",
-        "addressRegion": "FL",
-        "postalCode": "32202",
-        "addressCountry": "US"
-      },
-      "telephone": "+1-904-619-1386",
-      "parentOrganization": { "@id": "https://familylawyerjax.com/#organization" }
-    },
-
-    {
-      "@type": "LegalService",
-      "@id": "https://familylawyerjax.com/#southside",
-      "name": "Sasso, Guerrero & Henderlite – Southside / St. Johns / Beaches Office",
-      "url": "https://familylawyerjax.com/",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "9191 R.G. Skinner Parkway, Suite 703",
-        "addressLocality": "Jacksonville",
-        "addressRegion": "FL",
-        "postalCode": "32256",
-        "addressCountry": "US"
-      },
-      "telephone": "+1-904-619-1386",
-      "parentOrganization": { "@id": "https://familylawyerjax.com/#organization" }
-    },
-
-    {
-      "@type": "LegalService",
-      "@id": "https://familylawyerjax.com/#fernandina",
-      "name": "Sasso, Guerrero & Henderlite – Fernandina Beach Office",
-      "url": "https://familylawyerfernandina.com/",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "911 S. 8th St, Suite G",
-        "addressLocality": "Fernandina Beach",
-        "addressRegion": "FL",
-        "postalCode": "32034",
-        "addressCountry": "US"
-      },
-      "telephone": "+1-904-844-8026",
-      "parentOrganization": { "@id": "https://familylawyerjax.com/#organization" }
-    },
-
-    {
-      "@type": "WebSite",
-      "@id": "https://floridacriminalattorney.com/#site",
-      "name": "Florida Criminal Attorney – Sasso, Guerrero & Henderlite",
-      "url": "https://floridacriminalattorney.com/",
-      "publisher": { "@id": "https://familylawyerjax.com/#organization" }
-    },
-
-    {
-      "@type": "WebSite",
-      "@id": "https://familylawyerfernandina.com/#site",
-      "name": "Family Lawyer Fernandina – Sasso, Guerrero & Henderlite",
-      "url": "https://familylawyerfernandina.com/",
-      "publisher": { "@id": "https://familylawyerjax.com/#organization" }
-    },
-
-    {
-      "@type": "PodcastSeries",
-      "@id": "https://sassoguerrerohenderlite.github.io/splithappens/#podcast",
-      "name": "Split Happens",
-      "url": "https://sassoguerrerohenderlite.github.io/splithappens/",
-      "description": "Hosted by meteorologist Katie Garner and attorney Jay Henderlite, Split Happens explores family law topics with empathy and expertise — produced by Sasso, Guerrero & Henderlite.",
-      "inLanguage": "en-US",
-      "publisher": { "@id": "https://familylawyerjax.com/#organization" },
-      "creator": [
-        {
-          "@type": "Person",
-          "name": "Jay Henderlite",
-          "jobTitle": "Board Certified Family Law Attorney",
-          "worksFor": { "@id": "https://familylawyerjax.com/#organization" }
-        },
-        {
-          "@type": "Person",
-          "name": "Katie Garner",
-          "jobTitle": "Host & Meteorologist"
-        }
-      ],
-      "potentialAction": {
-        "@type": "ListenAction",
-        "target": [
-          "https://podcasts.apple.com/us/podcast/split-happens/id1830553452",
-          "https://open.spotify.com/show/06SuPFq957Xg9BnlZyGZlR"
-        ]
-      }
+  "@type": "PodcastSeries",
+  "@id": "https://feeds.megaphone.fm/splithappens",
+  "name": "Split Happens",
+  "url": "https://sassoguerrerohenderlite.github.io/splithappens/",
+  "description": "Hosted by Board Certified Family Law Attorney Jay Henderlite of Sasso, Guerrero & Henderlite, Split Happens explores real family law issues — from divorce and custody to co-parenting and rebuilding — with insight, empathy, and humor.",
+  "inLanguage": "en-US",
+  "genre": ["Family Law", "Divorce", "Parenting", "Legal Advice"],
+  "isFamilyFriendly": true,
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://raw.githubusercontent.com/sassoguerrerohenderlite/whensplithappens/main/When%20Split%20Happens%20Logo%20-%20A%20Family%20Law%20Podcast%20by%20Sasso%20Guerrero%20%26%20Henderlite.png",
+    "width": 1200,
+    "height": 1200
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Jay Henderlite",
+    "url": "https://familylawyerjax.com/attorneys/jay-henderlite/",
+    "jobTitle": "Board Certified Family Law Attorney",
+    "worksFor": { "@id": "#sgh-law" }
+  },
+  "publisher": { "@id": "#sgh-law" },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://sassoguerrerohenderlite.github.io/splithappens/"
+  },
+  "potentialAction": {
+    "@type": "ListenAction",
+    "target": [
+      "https://podcasts.apple.com/us/podcast/split-happens/id1830553452",
+      "https://open.spotify.com/show/06SuPFq957Xg9BnlZyGZlR",
+      "https://music.amazon.com/podcasts/a380d534-2d74-4bdd-9ce4-e2f0bbaf5d96/split-happens",
+      "https://podcastaddict.com/podcast/split-happens/6048854"
+    ],
+    "expectsAcceptanceOf": {
+      "@type": "Offer",
+      "price": "0.00",
+      "priceCurrency": "USD"
     }
+  },
+  "sameAs": [
+    "https://podcastindex.org/podcast/7461662",
+    "https://goodpods.com/podcasts/split-happens-704455",
+    "https://www.pandora.com/podcast/description/split-happens/PC:1001107524",
+    "https://www.audible.com/podcast/Split-Happens/B0FKVZXXXP"
+  ],
+  "hasPart": [
+    {
+      "@type": "PodcastEpisode",
+      "url": "https://feeds.megaphone.fm/splithappens",
+      "name": "Latest Episodes of Split Happens",
+      "description": "Listen to the latest episodes featuring practical family law advice from Jay Henderlite, covering divorce, custody, co-parenting, and more.",
+      "partOfSeries": { "@id": "https://feeds.megaphone.fm/splithappens" }
+    }
+  ]
+}
+</script>
+
+<!-- 🏛️ Organization (keep this on the podcast page so IDs resolve) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": "#sgh-law",
+  "name": "Sasso, Guerrero & Henderlite",
+  "url": "https://familylawyerjax.com/",
+  "description": "Sasso, Guerrero & Henderlite is a family law firm in Jacksonville, Florida, representing clients in divorce, custody, support, and complex family law matters.",
+  "logo": {
+    "@type": "ImageObject",
+    "url": "https://familylawyerjax.com/wp-content/uploads/2025/06/Sasso-Guerrero-Henderlite-Family-Law-Attorneys-in-Jacksonville-FL.png",
+    "width": 600,
+    "height": 200
+  },
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+1-904-619-1386",
+    "contactType": "Customer Service",
+    "areaServed": "US-FL",
+    "availableLanguage": "English"
+  },
+  "owns": [
+    { "@id": "https://familylawyerjax.com/#downtown" },
+    { "@id": "https://familylawyerjax.com/#southside" },
+    { "@id": "https://familylawyerfernandina.com/#location" },
+    { "@id": "https://floridacriminalattorney.com/#website" },
+    { "@id": "https://feeds.megaphone.fm/splithappens" }
+  ],
+  "sameAs": [
+    "https://www.facebook.com/SGHLaw",
+    "https://www.instagram.com/sghfamlaw/",
+    "https://www.youtube.com/@sgh_law",
+    "https://www.tiktok.com/@sghlaw_",
+    "https://www.linkedin.com/company/sasso-guerrero-henderlite/"
   ]
 }
 </script>
