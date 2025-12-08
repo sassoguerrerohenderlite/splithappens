@@ -11,6 +11,7 @@
   <meta name="description" content="Hosted by Board Certified Family Law Attorney Jay Henderlite and meteorologist Katie Garner, Split Happens Podcast offers expert guidance, real stories, and practical tips on divorce, custody, co-parenting, and Florida family law. Produced by Jacksonville’s Sasso Guerrero & Henderlite.">
   <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	 <link rel="canonical" href="https://sassoguerrerohenderlite.github.io/splithappens/">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
 <style>
   /* Base styles for the body element */
@@ -104,7 +105,27 @@
 .rss-desc { font-size: 0.95rem; color: #374151; line-height: 1.5; }
 </style>
 
-	<!-- 🎙️ Split Happens — Updated Schema using Megaphone feed -->
+<!-- 1. Law Firm – global unique ID (matches your other sites) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": "https://familylawyerjax.com/#organization",
+  "name": "Sasso, Guerrero & Henderlite",
+  "url": "https://familylawyerjax.com/",
+  "logo": "https://familylawyerjax.com/wp-content/uploads/2025/06/Sasso-Guerrero-Henderlite-Family-Law-Attorneys-in-Jacksonville-FL.png",
+  "sameAs": [
+    "https://www.facebook.com/SGHLaw",
+    "https://www.instagram.com/sghfamlaw/",
+    "https://www.youtube.com/@sgh_law",
+    "https://www.tiktok.com/@sghlaw_",
+    "https://www.linkedin.com/company/sasso-guerrero-henderlite/",
+    "https://pressadvantage.com/organization/sasso-guerrero-henderlite"
+  ]
+}
+</script>
+
+<!-- 2. Podcast – clean, no law-firm links in sameAs -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -112,100 +133,28 @@
   "@id": "https://feeds.megaphone.fm/splithappens",
   "name": "Split Happens",
   "url": "https://sassoguerrerohenderlite.github.io/splithappens/",
-  "description": "Hosted by Board Certified Family Law Attorney Jay Henderlite of Sasso, Guerrero & Henderlite, Split Happens explores real family law issues — from divorce and custody to co-parenting and rebuilding — with insight, empathy, and humor.",
-  "inLanguage": "en-US",
-  "genre": ["Family Law", "Divorce", "Parenting", "Legal Advice"],
-  "isFamilyFriendly": true,
+  "description": "Hosted by Board Certified Family Law Attorney Jay Henderlite and meteorologist Katie Garner, Split Happens offers expert guidance, real stories, and practical tips on divorce, custody, co-parenting, and Florida family law.",
   "image": {
     "@type": "ImageObject",
-    "url": "https://raw.githubusercontent.com/sassoguerrerohenderlite/whensplithappens/main/When%20Split%20Happens%20Logo%20-%20A%20Family%20Law%20Podcast%20by%20Sasso%20Guerrero%20%26%20Henderlite.png",
-    "width": 1200,
-    "height": 1200
+    "url": "https://megaphone.imgix.net/podcasts/f733de32-6f03-11f0-8dc5-036e31ede700/image/0a32f905830cf15460a894db8543ca3b.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress",
+    "width": 3000,
+    "height": 3000
   },
+  "publisher": { "@id": "https://familylawyerjax.com/#organization" },
   "author": {
     "@type": "Person",
     "name": "Jay Henderlite",
-    "url": "https://familylawyerjax.com/attorneys/jay-henderlite/",
-    "jobTitle": "Board Certified Family Law Attorney",
-    "worksFor": { "@id": "#sgh-law" }
-  },
-  "publisher": { "@id": "#sgh-law" },
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://sassoguerrerohenderlite.github.io/splithappens/"
-  },
-  "potentialAction": {
-    "@type": "ListenAction",
-    "target": [
-      "https://podcasts.apple.com/us/podcast/split-happens/id1830553452",
-      "https://open.spotify.com/show/06SuPFq957Xg9BnlZyGZlR",
-      "https://music.amazon.com/podcasts/a380d534-2d74-4bdd-9ce4-e2f0bbaf5d96/split-happens",
-      "https://podcastaddict.com/podcast/split-happens/6048854"
-    ],
-    "expectsAcceptanceOf": {
-      "@type": "Offer",
-      "price": "0.00",
-      "priceCurrency": "USD"
-    }
+    "worksFor": { "@id": "https://familylawyerjax.com/#organization" }
   },
   "sameAs": [
+    "https://podcasts.apple.com/us/podcast/id1830553452",
+    "https://open.spotify.com/show/06SuPFq957Xg9BnlZyGZlR",
     "https://podcastindex.org/podcast/7461662",
     "https://goodpods.com/podcasts/split-happens-704455",
-    "https://www.pandora.com/podcast/description/split-happens/PC:1001107524",
-    "https://www.audible.com/podcast/Split-Happens/B0FKVZXXXP",
-	"https://pressadvantage.com/organization/sasso-guerrero-henderlite"
-  ],
-  "hasPart": [
-    {
-      "@type": "PodcastEpisode",
-      "url": "https://feeds.megaphone.fm/splithappens",
-      "name": "Latest Episodes of Split Happens",
-      "description": "Listen to the latest episodes featuring practical family law advice from Jay Henderlite, covering divorce, custody, co-parenting, and more.",
-      "partOfSeries": { "@id": "https://feeds.megaphone.fm/splithappens" }
-    }
+    "https://www.pandora.com/podcast/description/split-happens/PC:1001107524"
   ]
 }
-</script>
-
-<!-- 🏛️ Organization (keep this on the podcast page so IDs resolve) -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "@id": "#sgh-law",
-  "name": "Sasso, Guerrero & Henderlite",
-  "url": "https://familylawyerjax.com/",
-  "description": "Sasso, Guerrero & Henderlite is a family law firm in Jacksonville, Florida, representing clients in divorce, custody, support, and complex family law matters.",
-  "logo": {
-    "@type": "ImageObject",
-    "url": "https://familylawyerjax.com/wp-content/uploads/2025/06/Sasso-Guerrero-Henderlite-Family-Law-Attorneys-in-Jacksonville-FL.png",
-    "width": 600,
-    "height": 200
-  },
-  "contactPoint": {
-    "@type": "ContactPoint",
-    "telephone": "+1-904-619-1386",
-    "contactType": "Customer Service",
-    "areaServed": "US-FL",
-    "availableLanguage": "English"
-  },
-  "owns": [
-    { "@id": "https://familylawyerjax.com/#downtown" },
-    { "@id": "https://familylawyerjax.com/#southside" },
-    { "@id": "https://familylawyerfernandina.com/#location" },
-    { "@id": "https://floridacriminalattorney.com/#website" },
-    { "@id": "https://feeds.megaphone.fm/splithappens" }
-  ],
-  "sameAs": [
-    "https://www.facebook.com/SGHLaw",
-    "https://www.instagram.com/sghfamlaw/",
-    "https://www.youtube.com/@sgh_law",
-    "https://www.tiktok.com/@sghlaw_",
-    "https://www.linkedin.com/company/sasso-guerrero-henderlite/",
-	"https://pressadvantage.com/organization/sasso-guerrero-henderlite"
-  ]
-}
-</script>
+</script>	
 
 
 	 
