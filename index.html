@@ -315,9 +315,10 @@
     </section>
 
     <section>
-        <h3>Sasso Guerrero & Henderlite Hub</h3>
+        <h3>Sasso Guerrero & Henderlite Podcasts and Media</h3>
         <div class="platform-links">
-            <a href="">Family Law Firm Site hub</a>
+            <a href="https://sassoguerrerohenderlite.github.io/whensplithappens/">When Split Happens Podcast</a>;
+            <a href="https://pressadvantage.com/i_organization/sasso-guerrero-henderlite">Sasso Guerrero & Henderite Media Room</a>
         </div>
     </section>
     <section>
@@ -335,7 +336,7 @@ const feedURL = "https://familylawyerjax.com/feed/";
         return;
       }
 
-      let html = "<h4>Recent News from Sasso Guerrero & Henderlite</h4>";
+      let html = "<h3>Recent News from Sasso Guerrero & Henderlite</h3>";
       data.items.slice(0, 5).forEach(item => {
         const date = new Date(item.pubDate).toLocaleDateString('en-US', {
           month: 'short', day: 'numeric', year: 'numeric'
@@ -373,7 +374,7 @@ const pressFeedURL = "https://app.pressadvantage.com/feeds/channel/sasso-guerrer
         return;
       }
 
-      let html = "<h4>Sasso, Guerrero & Henderlite Press Releases</h4>";
+      let html = "<h3>Sasso, Guerrero & Henderlite Press Releases</h3>";
       data.items.slice(0, 5).forEach(item => {
         const date = new Date(item.pubDate).toLocaleDateString('en-US', {
           month: 'short', day: 'numeric', year: 'numeric'
